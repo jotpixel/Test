@@ -14,7 +14,7 @@ describe('Create a New Job on facility list', () => {
       .click({ force: true }) //Clicking on the New Job Button
 
     cy.get('#mat-input-2')
-      .type({ force: true },'New Test Job') //Entering Job Name
+      .type('New Test Job') //Entering Job Name
 
     cy.get('.mat-select-search-inside-mat-option.ng-valid.ng-dirty.ng-touched')
       .click()//Selecting the Customer Dropdown
@@ -36,8 +36,8 @@ describe('Create a New Job on facility list', () => {
   it('New Facility Creation', () => {
 
     cy.visit('https://app.pv-platform-qa.pointivo.com/fm/#/facilities/buildings')
-    cy.wait(5000)
-    cy.contains('New Facility', { timeout: 10000 })
+   
+    cy.contains('New Facility', { timeout: 50000 })
       .click({ force: true }) //Clicking on the New Facility Button
 
     cy.get('[data-placeholder="Name"]')
