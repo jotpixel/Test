@@ -9,4 +9,11 @@ describe('Browser download', () => {
     cy.get('.cta-cards_green__LcSUR > .cta-cards_button___d1sm').click()
   
   })
+
+  it.only('Drop down selection', () => {
+    cy.visit('https://www.airblue.com/')
+    cy.get('[type="text"]').first().click().type('ISB')
+ 
+
+  })
 })
