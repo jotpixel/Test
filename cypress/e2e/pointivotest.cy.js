@@ -14,7 +14,7 @@ describe('Create a New Job on facility list', () => {
       .click({ force: true }) //Clicking on the New Job Button
 
     cy.get('#mat-input-2')
-      .type({ force: true },'New Test Job') //Entering Job Name
+      .type('New Test Job') //Entering Job Name
 
     cy.get('.mat-select-search-inside-mat-option.ng-valid.ng-dirty.ng-touched')
       .click()//Selecting the Customer Dropdown
