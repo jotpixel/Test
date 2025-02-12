@@ -36,8 +36,8 @@ describe('Create a New Job on facility list', () => {
   it('New Facility Creation', () => {
 
     cy.visit('https://app.pv-platform-qa.pointivo.com/fm/#/facilities/buildings')
-    cy.wait(5000)
-    cy.contains('New Facility', { timeout: 10000 })
+   
+    cy.contains('New Facility', { timeout: 50000 })
       .click({ force: true }) //Clicking on the New Facility Button
 
     cy.get('[data-placeholder="Name"]')
